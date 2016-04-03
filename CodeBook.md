@@ -1,6 +1,74 @@
 # Code Book for Tidy Dataset
 
-## Merging Datasets
+## Tidy dataset variables
+* "activity"
+* "subject"
+* "timebodyacceleration-mean()-x"                 
+* "timebodyacceleration-mean()-y"                
+* "timebodyacceleration-mean()-z"                 
+* "timebodyacceleration-std()-x"                 
+* "timebodyacceleration-std()-y"                  
+* "timebodyacceleration-std()-z"                 
+* "timegravityacceleration-mean()-x"              
+* "timegravityacceleration-mean()-y"             
+* "timegravityacceleration-mean()-z"              
+* "timegravityacceleration-std()-x"              
+* "timegravityacceleration-std()-y"               
+* "timegravityacceleration-std()-z"              
+* "timebodyaccelerationjerk-mean()-x"             
+* "timebodyaccelerationjerk-mean()-y"            
+* "timebodyaccelerationjerk-mean()-z"             
+* "timebodyaccelerationjerk-std()-x"             
+* "timebodyaccelerationjerk-std()-y"              
+* "timebodyaccelerationjerk-std()-z"             
+* "timebodygyroscope-mean()-x"                    
+* "timebodygyroscope-mean()-y"                   
+* "timebodygyroscope-mean()-z"                    
+* "timebodygyroscope-std()-x"                    
+* "timebodygyroscope-std()-y"                     
+* "timebodygyroscope-std()-z"                    
+* "timebodygyroscopejerk-mean()-x"                
+* "timebodygyroscopejerk-mean()-y"               
+* "timebodygyroscopejerk-mean()-z"                
+* "timebodygyroscopejerk-std()-x"                
+* "timebodygyroscopejerk-std()-y"                 
+* "timebodygyroscopejerk-std()-z"                
+* "timebodyaccelerationmagnitude-mean()"          
+* "timebodyaccelerationmagnitude-std()"          
+* "timegravityaccelerationmagnitude-mean()"       
+* "timegravityaccelerationmagnitude-std()"       
+* "timebodyaccelerationjerkmagnitude-mean()"      
+* "timebodyaccelerationjerkmagnitude-std()"      
+* "timebodygyroscopemagnitude-mean()"             
+* "timebodygyroscopemagnitude-std()"             
+* "timebodygyroscopejerkmagnitude-mean()"         
+* "timebodygyroscopejerkmagnitude-std()"         
+* "frequencybodyacceleration-mean()-x"            
+* "frequencybodyacceleration-mean()-y"           
+* "frequencybodyacceleration-mean()-z"            
+* "frequencybodyacceleration-std()-x"            
+* "frequencybodyacceleration-std()-y"             
+* "frequencybodyacceleration-std()-z"            
+* "frequencybodyaccelerationjerk-mean()-x"        
+* "frequencybodyaccelerationjerk-mean()-y"       
+* "frequencybodyaccelerationjerk-mean()-z"        
+* "frequencybodyaccelerationjerk-std()-x"        
+* "frequencybodyaccelerationjerk-std()-y"         
+* "frequencybodyaccelerationjerk-std()-z"        
+* "frequencybodygyroscope-mean()-x"               
+* "frequencybodygyroscope-mean()-y"              
+* "frequencybodygyroscope-mean()-z"               
+* "frequencybodygyroscope-std()-x"               
+* "frequencybodygyroscope-std()-y"                
+* "frequencybodygyroscope-std()-z"               
+* "frequencybodyaccelerationmagnitude-mean()"     
+* "frequencybodyaccelerationmagnitude-std()"     
+* "frequencybodyaccelerationjerkmagnitude-mean()" 
+* "frequencybodyaccelerationjerkmagnitude-std()" 
+* "frequencybodygyroscopemagnitude-mean()"        
+* "frequencybodygyroscopemagnitude-std()"        
+* "frequencybodygyroscopejerkmagnitude-mean()"    
+* "frequencybodygyroscopejerkmagnitude-std()"  
 
 ### Loading Data
 The data files were loaded into the following data frames using `read.table`.
@@ -29,7 +97,7 @@ Using cbind, the above transformations were used to create intermediate test and
 The test and train datasets do not have a relationship where they can be joined on a common key using merge.  This fact is readily apparent from the README file accompanying the dataset, "The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.".  Instead, these datasets need to be "vertically" merged back together by using rbind in order to recreate the original unpartitioned dataset.  Using rbind, the **xtestcomplete** and **xtraincomplete** were merged together forming **xmergeddata**.
 
 ### Extracting mean and std Measurements
-Using grep, the columns in the dataset containg "mean()" or "std()" were extracted from **xmergeddata**.  Aditionally, the "activity" and "subject" columns were also extracted wusing grep, since these will be needed later in calculating the column averages.
+Using grep, the columns in the dataset containg "mean()" or "std()" were extracted from **xmergeddata**.  Additionally, the "activity" and "subject" columns were also extracted wusing grep, since these will be needed later in calculating the column averages.
 
 ### Adding Descriptive Activity Names
 The activity ids in **xmergeddata** were replaced by the activity label using the **match** function.  This function matches the activity id in **xmergeddata** with the activity id in **activitylabels** and replaces it with the more descriptive activity label.  The resultant dataset is called **stdandmean**.

@@ -1,4 +1,10 @@
-# Code Book for Tidy Dataset
+# README
+
+## Repository Contents
+* **README.md** : This file
+* **CodeBook.md** : Outlines script and dataset variables
+* **run_analysis.R** : Script to transform the data into the tidy data set
+* **tidydata.txt** : Tidy dataset that results from the execution of **tidydata.txt**
 
 ## Merging Datasets
 
