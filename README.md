@@ -56,6 +56,7 @@ Using these points as a guideline, the variable names were modified as follows u
 * tolower(colnames(stdandmean))
 
 This resulted in the following variable names
+
 | Variable Name										|
 |:--------------------------------------------------|
 | "activity"										|
