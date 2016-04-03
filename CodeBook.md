@@ -3,7 +3,7 @@
 ## Tidy dataset variables
 
 | Variable											| Data Type				|
-|:-------------------------------------------------:|:---------------------:|
+|:--------------------------------------------------|:----------------------|
 | "activity"										|			string		|
 | "subject"											|			int			|
 | "timebodyacceleration-mean()-x"           		|    		numeric		|
