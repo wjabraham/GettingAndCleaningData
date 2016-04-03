@@ -59,8 +59,6 @@ This resulted in the following variable names
 
 | Variable Name										|
 |:--------------------------------------------------|
-| "activity"										|
-| "subject"											|
 | "timebodyacceleration-mean()-x"           		|
 | "timebodyacceleration-mean()-y"           		|
 | "timebodyacceleration-mean()-z"           		|
