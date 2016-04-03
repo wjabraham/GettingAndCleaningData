@@ -56,72 +56,77 @@ Using these points as a guideline, the variable names were modified as follows u
 * tolower(colnames(stdandmean))
 
 This resulted in the following variable names
-* "timebodyacceleration-mean()-x"                 
-* "timebodyacceleration-mean()-y"                
-* "timebodyacceleration-mean()-z"                 
-* "timebodyacceleration-std()-x"                 
-* "timebodyacceleration-std()-y"                  
-* "timebodyacceleration-std()-z"                 
-* "timegravityacceleration-mean()-x"              
-* "timegravityacceleration-mean()-y"             
-* "timegravityacceleration-mean()-z"              
-* "timegravityacceleration-std()-x"              
-* "timegravityacceleration-std()-y"               
-* "timegravityacceleration-std()-z"              
-* "timebodyaccelerationjerk-mean()-x"             
-* "timebodyaccelerationjerk-mean()-y"            
-* "timebodyaccelerationjerk-mean()-z"             
-* "timebodyaccelerationjerk-std()-x"             
-* "timebodyaccelerationjerk-std()-y"              
-* "timebodyaccelerationjerk-std()-z"             
-* "timebodygyroscope-mean()-x"                    
-* "timebodygyroscope-mean()-y"                   
-* "timebodygyroscope-mean()-z"                    
-* "timebodygyroscope-std()-x"                    
-* "timebodygyroscope-std()-y"                     
-* "timebodygyroscope-std()-z"                    
-* "timebodygyroscopejerk-mean()-x"                
-* "timebodygyroscopejerk-mean()-y"               
-* "timebodygyroscopejerk-mean()-z"                
-* "timebodygyroscopejerk-std()-x"                
-* "timebodygyroscopejerk-std()-y"                 
-* "timebodygyroscopejerk-std()-z"                
-* "timebodyaccelerationmagnitude-mean()"          
-* "timebodyaccelerationmagnitude-std()"          
-* "timegravityaccelerationmagnitude-mean()"       
-* "timegravityaccelerationmagnitude-std()"       
-* "timebodyaccelerationjerkmagnitude-mean()"      
-* "timebodyaccelerationjerkmagnitude-std()"      
-* "timebodygyroscopemagnitude-mean()"             
-* "timebodygyroscopemagnitude-std()"             
-* "timebodygyroscopejerkmagnitude-mean()"         
-* "timebodygyroscopejerkmagnitude-std()"         
-* "frequencybodyacceleration-mean()-x"            
-* "frequencybodyacceleration-mean()-y"           
-* "frequencybodyacceleration-mean()-z"            
-* "frequencybodyacceleration-std()-x"            
-* "frequencybodyacceleration-std()-y"             
-* "frequencybodyacceleration-std()-z"            
-* "frequencybodyaccelerationjerk-mean()-x"        
-* "frequencybodyaccelerationjerk-mean()-y"       
-* "frequencybodyaccelerationjerk-mean()-z"        
-* "frequencybodyaccelerationjerk-std()-x"        
-* "frequencybodyaccelerationjerk-std()-y"         
-* "frequencybodyaccelerationjerk-std()-z"        
-* "frequencybodygyroscope-mean()-x"               
-* "frequencybodygyroscope-mean()-y"              
-* "frequencybodygyroscope-mean()-z"               
-* "frequencybodygyroscope-std()-x"               
-* "frequencybodygyroscope-std()-y"                
-* "frequencybodygyroscope-std()-z"               
-* "frequencybodyaccelerationmagnitude-mean()"     
-* "frequencybodyaccelerationmagnitude-std()"     
-* "frequencybodyaccelerationjerkmagnitude-mean()" 
-* "frequencybodyaccelerationjerkmagnitude-std()" 
-* "frequencybodygyroscopemagnitude-mean()"        
-* "frequencybodygyroscopemagnitude-std()"        
-* "frequencybodygyroscopejerkmagnitude-mean()"    
-* "frequencybodygyroscopejerkmagnitude-std()"  
+| Variable Name										|
+|:--------------------------------------------------|
+| "activity"										|
+| "subject"											|
+| "timebodyacceleration-mean()-x"           		|
+| "timebodyacceleration-mean()-y"           		|
+| "timebodyacceleration-mean()-z"           		|
+| "timebodyacceleration-std()-x"            		|
+| "timebodyacceleration-std()-y"            		|
+| "timebodyacceleration-std()-z"            		|
+| "timegravityacceleration-mean()-x"        		|
+| "timegravityacceleration-mean()-y"        		|
+| "timegravityacceleration-mean()-z"        		|
+| "timegravityacceleration-std()-x"         		|
+| "timegravityacceleration-std()-y"         		|
+| "timegravityacceleration-std()-z"         		|
+| "timebodyaccelerationjerk-mean()-x"       		|
+| "timebodyaccelerationjerk-mean()-y"       		|
+| "timebodyaccelerationjerk-mean()-z"       		|
+| "timebodyaccelerationjerk-std()-x"        		|
+| "timebodyaccelerationjerk-std()-y"        		|
+| "timebodyaccelerationjerk-std()-z"        		|
+| "timebodygyroscope-mean()-x"              		|
+| "timebodygyroscope-mean()-y"              		|
+| "timebodygyroscope-mean()-z"              		|
+| "timebodygyroscope-std()-x"               		|
+| "timebodygyroscope-std()-y"               		|
+| "timebodygyroscope-std()-z"               		|
+| "timebodygyroscopejerk-mean()-x"        			|
+| "timebodygyroscopejerk-mean()-y"          		|
+| "timebodygyroscopejerk-mean()-z"          		|
+| "timebodygyroscopejerk-std()-x"           		|    
+| "timebodygyroscopejerk-std()-y"          			|     
+| "timebodygyroscopejerk-std()-z"           		|    
+| "timebodyaccelerationmagnitude-mean()"    		|     
+| "timebodyaccelerationmagnitude-std()"     		|    
+| "timegravityaccelerationmagnitude-mean()" 		|     
+| "timegravityaccelerationmagnitude-std()"  		|    
+| "timebodyaccelerationjerkmagnitude-mean()"		|     
+| "timebodyaccelerationjerkmagnitude-std()" 		|    
+| "timebodygyroscopemagnitude-mean()"       		|     
+| "timebodygyroscopemagnitude-std()"        		|    
+| "timebodygyroscopejerkmagnitude-mean()"   		|     
+| "timebodygyroscopejerkmagnitude-std()"    		|    
+| "frequencybodyacceleration-mean()-x"      		|     
+| "frequencybodyacceleration-mean()-y"      		|    
+| "frequencybodyacceleration-mean()-z"      		|     
+| "frequencybodyacceleration-std()-x"       		|    
+| "frequencybodyacceleration-std()-y"       		|     
+| "frequencybodyacceleration-std()-z"       		|    
+| "frequencybodyaccelerationjerk-mean()-x"  		|     
+| "frequencybodyaccelerationjerk-mean()-y"  		|    
+| "frequencybodyaccelerationjerk-mean()-z"  		|     
+| "frequencybodyaccelerationjerk-std()-x"   		|    
+| "frequencybodyaccelerationjerk-std()-y"   		|     
+| "frequencybodyaccelerationjerk-std()-z"   		|    
+| "frequencybodygyroscope-mean()-x"         		|     
+| "frequencybodygyroscope-mean()-y"         		|    
+| "frequencybodygyroscope-mean()-z"         		|     
+| "frequencybodygyroscope-std()-x"          		|    
+| "frequencybodygyroscope-std()-y"          		|     
+| "frequencybodygyroscope-std()-z"        		  	|    
+| "frequencybodyaccelerationmagnitude-mean()"		|    
+| "frequencybodyaccelerationmagnitude-std()"		|    
+| "frequencybodyaccelerationjerkmagnitude-mean()"	|
+| "frequencybodyaccelerationjerkmagnitude-std()"	|
+| "frequencybodygyroscopemagnitude-mean()"   		|    
+| "frequencybodygyroscopemagnitude-std()"     		|  
+| "frequencybodygyroscopejerkmagnitude-mean()"    	|
+| "frequencybodygyroscopejerkmagnitude-std()"  		|
+
 
 ### Creating Tidy Dataset
 Using the dplyr package, the the **stdandmean** datset was grouped by the activity and subject variables, and then, using summarize_each to apply the mean function over each of the mean() and std() variables.
