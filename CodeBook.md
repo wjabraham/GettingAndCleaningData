@@ -1,74 +1,77 @@
 # Code Book for Tidy Dataset
 
 ## Tidy dataset variables
-* "activity"
-* "subject"
-* "timebodyacceleration-mean()-x"                 
-* "timebodyacceleration-mean()-y"                
-* "timebodyacceleration-mean()-z"                 
-* "timebodyacceleration-std()-x"                 
-* "timebodyacceleration-std()-y"                  
-* "timebodyacceleration-std()-z"                 
-* "timegravityacceleration-mean()-x"              
-* "timegravityacceleration-mean()-y"             
-* "timegravityacceleration-mean()-z"              
-* "timegravityacceleration-std()-x"              
-* "timegravityacceleration-std()-y"               
-* "timegravityacceleration-std()-z"              
-* "timebodyaccelerationjerk-mean()-x"             
-* "timebodyaccelerationjerk-mean()-y"            
-* "timebodyaccelerationjerk-mean()-z"             
-* "timebodyaccelerationjerk-std()-x"             
-* "timebodyaccelerationjerk-std()-y"              
-* "timebodyaccelerationjerk-std()-z"             
-* "timebodygyroscope-mean()-x"                    
-* "timebodygyroscope-mean()-y"                   
-* "timebodygyroscope-mean()-z"                    
-* "timebodygyroscope-std()-x"                    
-* "timebodygyroscope-std()-y"                     
-* "timebodygyroscope-std()-z"                    
-* "timebodygyroscopejerk-mean()-x"                
-* "timebodygyroscopejerk-mean()-y"               
-* "timebodygyroscopejerk-mean()-z"                
-* "timebodygyroscopejerk-std()-x"                
-* "timebodygyroscopejerk-std()-y"                 
-* "timebodygyroscopejerk-std()-z"                
-* "timebodyaccelerationmagnitude-mean()"          
-* "timebodyaccelerationmagnitude-std()"          
-* "timegravityaccelerationmagnitude-mean()"       
-* "timegravityaccelerationmagnitude-std()"       
-* "timebodyaccelerationjerkmagnitude-mean()"      
-* "timebodyaccelerationjerkmagnitude-std()"      
-* "timebodygyroscopemagnitude-mean()"             
-* "timebodygyroscopemagnitude-std()"             
-* "timebodygyroscopejerkmagnitude-mean()"         
-* "timebodygyroscopejerkmagnitude-std()"         
-* "frequencybodyacceleration-mean()-x"            
-* "frequencybodyacceleration-mean()-y"           
-* "frequencybodyacceleration-mean()-z"            
-* "frequencybodyacceleration-std()-x"            
-* "frequencybodyacceleration-std()-y"             
-* "frequencybodyacceleration-std()-z"            
-* "frequencybodyaccelerationjerk-mean()-x"        
-* "frequencybodyaccelerationjerk-mean()-y"       
-* "frequencybodyaccelerationjerk-mean()-z"        
-* "frequencybodyaccelerationjerk-std()-x"        
-* "frequencybodyaccelerationjerk-std()-y"         
-* "frequencybodyaccelerationjerk-std()-z"        
-* "frequencybodygyroscope-mean()-x"               
-* "frequencybodygyroscope-mean()-y"              
-* "frequencybodygyroscope-mean()-z"               
-* "frequencybodygyroscope-std()-x"               
-* "frequencybodygyroscope-std()-y"                
-* "frequencybodygyroscope-std()-z"               
-* "frequencybodyaccelerationmagnitude-mean()"     
-* "frequencybodyaccelerationmagnitude-std()"     
-* "frequencybodyaccelerationjerkmagnitude-mean()" 
-* "frequencybodyaccelerationjerkmagnitude-std()" 
-* "frequencybodygyroscopemagnitude-mean()"        
-* "frequencybodygyroscopemagnitude-std()"        
-* "frequencybodygyroscopejerkmagnitude-mean()"    
-* "frequencybodygyroscopejerkmagnitude-std()"  
+
+| Variable											| Data Type				|
+|:-------------------------------------------------:|:---------------------:|
+| "activity"										|			string		|
+| "subject"											|			int			|
+| "timebodyacceleration-mean()-x"           		|    		numeric		|
+| "timebodyacceleration-mean()-y"           		|    		numeric		|
+| "timebodyacceleration-mean()-z"           		|      		numeric		|
+| "timebodyacceleration-std()-x"            		|     		numeric		|
+| "timebodyacceleration-std()-y"            		|      		numeric		|
+| "timebodyacceleration-std()-z"            		|     		numeric		|
+| "timegravityacceleration-mean()-x"        		|      		numeric		|
+| "timegravityacceleration-mean()-y"        		|     		numeric		|
+| "timegravityacceleration-mean()-z"        		|      		numeric		|
+| "timegravityacceleration-std()-x"         		|     		numeric		|
+| "timegravityacceleration-std()-y"         		|      		numeric		|
+| "timegravityacceleration-std()-z"         		|     		numeric		|
+| "timebodyaccelerationjerk-mean()-x"       		|      		numeric		|
+| "timebodyaccelerationjerk-mean()-y"       		|     		numeric		|
+| "timebodyaccelerationjerk-mean()-z"       		|      		numeric		|
+| "timebodyaccelerationjerk-std()-x"        		|     		numeric		|
+| "timebodyaccelerationjerk-std()-y"        		|      		numeric		|
+| "timebodyaccelerationjerk-std()-z"        		|     		numeric		|
+| "timebodygyroscope-mean()-x"              		|      		numeric		|
+| "timebodygyroscope-mean()-y"              		|     		numeric		|
+| "timebodygyroscope-mean()-z"              		|      		numeric		|
+| "timebodygyroscope-std()-x"               		|     		numeric		|
+| "timebodygyroscope-std()-y"               		|      		numeric		|
+| "timebodygyroscope-std()-z"               		|     		numeric		|
+| "timebodygyroscopejerk-mean()-x"        			|     		numeric		|
+| "timebodygyroscopejerk-mean()-y"          		|     		numeric		|
+| "timebodygyroscopejerk-mean()-z"          		|     		numeric		|
+| "timebodygyroscopejerk-std()-x"           		|     		numeric		|     
+| "timebodygyroscopejerk-std()-y"          			|     		numeric		|      
+| "timebodygyroscopejerk-std()-z"           		|     		numeric		|     
+| "timebodyaccelerationmagnitude-mean()"    		|     		numeric		|      
+| "timebodyaccelerationmagnitude-std()"     		|     		numeric		|     
+| "timegravityaccelerationmagnitude-mean()" 		|     		numeric		|      
+| "timegravityaccelerationmagnitude-std()"  		|     		numeric		|     
+| "timebodyaccelerationjerkmagnitude-mean()"		|     		numeric		|      
+| "timebodyaccelerationjerkmagnitude-std()" 		|     		numeric		|     
+| "timebodygyroscopemagnitude-mean()"       		|     		numeric		|      
+| "timebodygyroscopemagnitude-std()"        		|     		numeric		|     
+| "timebodygyroscopejerkmagnitude-mean()"   		|     		numeric		|      
+| "timebodygyroscopejerkmagnitude-std()"    		|     		numeric		|     
+| "frequencybodyacceleration-mean()-x"      		|     		numeric		|      
+| "frequencybodyacceleration-mean()-y"      		|     		numeric		|     
+| "frequencybodyacceleration-mean()-z"      		|     		numeric		|      
+| "frequencybodyacceleration-std()-x"       		|     		numeric		|     
+| "frequencybodyacceleration-std()-y"       		|     		numeric		|      
+| "frequencybodyacceleration-std()-z"       		|     		numeric		|     
+| "frequencybodyaccelerationjerk-mean()-x"  		|     		numeric		|      
+| "frequencybodyaccelerationjerk-mean()-y"  		|     		numeric		|     
+| "frequencybodyaccelerationjerk-mean()-z"  		|     		numeric		|      
+| "frequencybodyaccelerationjerk-std()-x"   		|     		numeric		|     
+| "frequencybodyaccelerationjerk-std()-y"   		|     		numeric		|      
+| "frequencybodyaccelerationjerk-std()-z"   		|     		numeric		|     
+| "frequencybodygyroscope-mean()-x"         		|     		numeric		|      
+| "frequencybodygyroscope-mean()-y"         		|     		numeric		|     
+| "frequencybodygyroscope-mean()-z"         		|     		numeric		|      
+| "frequencybodygyroscope-std()-x"          		|     		numeric		|     
+| "frequencybodygyroscope-std()-y"          		|     		numeric		|      
+| "frequencybodygyroscope-std()-z"        		  	|     		numeric		|     
+| "frequencybodyaccelerationmagnitude-mean()"		|     		numeric		|     
+| "frequencybodyaccelerationmagnitude-std()"		|     		numeric		|     
+| "frequencybodyaccelerationjerkmagnitude-mean()"	|     		numeric		| 
+| "frequencybodyaccelerationjerkmagnitude-std()"	|     		numeric		| 
+| "frequencybodygyroscopemagnitude-mean()"   		|     		numeric		|     
+| "frequencybodygyroscopemagnitude-std()"     		|     		numeric		|   
+| "frequencybodygyroscopejerkmagnitude-mean()"    	|     		numeric		|
+| "frequencybodygyroscopejerkmagnitude-std()"  		|     		numeric		|
 
 ### Loading Data
 The data files were loaded into the following data frames using `read.table`.
